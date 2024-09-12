@@ -62,11 +62,6 @@
 			<version>5.2.3</version>
 		</dependency>
 
-		<dependency>
-			<groupId>com.itextpdf</groupId>
-			<artifactId>itext7-core</artifactId>
-			<version>7.2.2</version>
-		</dependency>
 		<!-- Include specific modules as needed -->
 		<dependency>
 			<groupId>com.itextpdf</groupId>
