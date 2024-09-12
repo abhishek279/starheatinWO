@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
-
+@CrossOrigin(origins = "https://starheating-wo-git-master-abhishek279s-projects.vercel.app")
 @RestController
 @RequestMapping("/api/serviceReports")
 public class ServiceReportController {
