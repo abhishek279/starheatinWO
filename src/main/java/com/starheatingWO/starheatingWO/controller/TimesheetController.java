@@ -16,7 +16,7 @@ public class TimesheetController {
 
     @Autowired
     private TimesheetService timesheetService;
-    @CrossOrigin(origins = "*")
+
     @RequestMapping(method = RequestMethod.OPTIONS)
     public ResponseEntity<Timesheet> createTimesheet(@RequestBody Timesheet timesheet) {
         return ResponseEntity.ok(timesheetService.saveTimesheet(timesheet));
