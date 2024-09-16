@@ -17,7 +17,7 @@ public class TimesheetController {
     @Autowired
     private TimesheetService timesheetService;
 
-    @RequestMapping(method = RequestMethod.OPTIONS)
+    @PostMapping
     public ResponseEntity<Timesheet> createTimesheet(@RequestBody Timesheet timesheet) {
         return ResponseEntity.ok(timesheetService.saveTimesheet(timesheet));
     }
