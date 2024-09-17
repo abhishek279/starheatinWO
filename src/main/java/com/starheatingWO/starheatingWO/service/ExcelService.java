@@ -187,8 +187,8 @@ public class ExcelService {
             Row row = sheet.createRow(rowIdx++);
 
             row.createCell(0).setCellValue(timesheet.getName());
-            row.createCell(1).setCellValue(timesheet.getLoginTime().toString()); // Adjust formatting if needed
-            row.createCell(2).setCellValue(timesheet.getLogoutTime().toString()); // Adjust formatting if needed
+            row.createCell(1).setCellValue(timesheet.getStartTime().toString()); // Adjust formatting if needed
+            row.createCell(2).setCellValue(timesheet.getEndTime().toString()); // Adjust formatting if needed
 
             // Mark as exported
             timesheet.setExported(true);

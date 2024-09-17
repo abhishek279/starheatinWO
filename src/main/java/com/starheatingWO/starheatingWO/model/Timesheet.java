@@ -11,8 +11,10 @@ public class Timesheet {
     private Long id;
 
     private String name;
-    private LocalDateTime loginTime;
-    private LocalDateTime logoutTime;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
+    private boolean completed;
+    private double hours;
     private boolean exported = false;
 
     // Constructors, getters, and setters
@@ -21,8 +23,8 @@ public class Timesheet {
 
     public Timesheet(String name, LocalDateTime loginTime, LocalDateTime logoutTime) {
         this.name = name;
-        this.loginTime = loginTime;
-        this.logoutTime = logoutTime;
+        this.startTime = loginTime;
+        this.endTime = logoutTime;
     }
 
     public Long getId() {
@@ -41,20 +43,20 @@ public class Timesheet {
         this.name = name;
     }
 
-    public LocalDateTime getLoginTime() {
-        return loginTime;
+    public LocalDateTime getStartTime() {
+        return startTime;
     }
 
-    public void setLoginTime(LocalDateTime loginTime) {
-        this.loginTime = loginTime;
+    public void setStartTime(LocalDateTime startTime) {
+        this.startTime = startTime;
     }
 
-    public LocalDateTime getLogoutTime() {
-        return logoutTime;
+    public LocalDateTime getEndTime() {
+        return endTime;
     }
 
-    public void setLogoutTime(LocalDateTime logoutTime) {
-        this.logoutTime = logoutTime;
+    public void setEndTime(LocalDateTime endTime) {
+        this.endTime = endTime;
     }
 
     public boolean isExported() {
@@ -63,5 +65,21 @@ public class Timesheet {
 
     public void setExported(boolean exported) {
         this.exported = exported;
+    }
+
+    public boolean isCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
+    }
+
+    public double getHours() {
+        return hours;
+    }
+
+    public void setHours(double hours) {
+        this.hours = hours;
     }
 }
