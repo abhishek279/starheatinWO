@@ -17,6 +17,8 @@ public class Timesheet {
     private double hours;
     private boolean exported = false;
 
+    private String workOrderNumber;
+
     // Constructors, getters, and setters
     public Timesheet() {
     }
@@ -81,5 +83,13 @@ public class Timesheet {
 
     public void setHours(double hours) {
         this.hours = hours;
+    }
+
+    public String getWorkOrderNumber() {
+        return workOrderNumber;
+    }
+
+    public void setWorkOrderNumber(String workOrderNumber) {
+        this.workOrderNumber = workOrderNumber;
     }
 }
