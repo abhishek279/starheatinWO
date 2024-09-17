@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("starheating-wo-lgtj-77u5jmqrv-abhishek279s-projects.vercel.app") // Add your frontend URL here
+                .allowedOrigins("https://starheating-wo-lgtj-77u5jmqrv-abhishek279s-projects.vercel.app/") // Add your frontend URL here
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(false); // Set this based on whether your client will send credentials like cookies
